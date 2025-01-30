@@ -393,11 +393,7 @@ export const DefaultFilter: React.FC<React.PropsWithChildren<FilterProps>> = ({
               showDateTime
             />
           ) : (
-            <SampleDataGrid
-              data={paginatedData}
-              showDateTime
-              key={JSON.stringify(paginatedData)}
-            />
+            <SampleDataGrid data={paginatedData} showDateTime />
           )
         ) : (
           <EmptyState handleClearAll={handleClearAll} />
